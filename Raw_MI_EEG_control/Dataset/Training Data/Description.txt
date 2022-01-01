@@ -1,0 +1,7 @@
+Training Data:
+Number of:
+- Subject: 12
+- Session 1
+- Trial: 10
+- Duration: 20s
+- Frequency: 96Hz
