@@ -6,6 +6,7 @@ Number of:
 - Trial:      10
 - Duration:   20s
 - Frequency:  96Hz
+- Relaxation duration between trials:   4s
 - Country, alternating current (AC) hum has a frequency of 50Hz, can be used to eliminate the electrical noise.
 **************************************************************
 Loading the data of each subject using python:------------
@@ -24,3 +25,4 @@ The experimental testing paradigm is as follows: we launch the global prediction
 - Trial:      >=10
 - Duration:   20s
 - Frequency:  96Hz
+- Relaxation duration between trials:   4s
