@@ -15,7 +15,7 @@ import numpy as np
 Data=np.load(file.npy,allow_pickle=True)
 ##  Get raw EEG:      
 X_train=np.array([i for i in Data[:,0]])
-#   Get labels:       
+##   Get labels: Label '0' for the imagination of a left-hand movement, and '1' for the right-hand movement. 
 Y_train=np.array([i for i in Data[:,1]])
 ----------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Testing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
