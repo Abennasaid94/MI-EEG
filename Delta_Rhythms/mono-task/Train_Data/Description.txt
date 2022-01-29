@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Training %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The experimental training paradigm is as follows: We launch an object that allows moving to the left and right of an interface based on a randomized prediction, such that each subject concentrates to control the movement towards the direction indicated by the manager of the experiment, the signals acquired from each of subject are collected and recorded in a .npy file.
+The experimental training paradigm is as follows: We launch an object that allows moving to the left, right, forward, and backward in an interface based on a randomized prediction, such that each subject concentrates to control the movement towards the direction indicated by the manager of the experiment, the signals acquired from each of subject are collected and recorded in a .npy file.
 Number of:
 - Subject:    10
 - Session:    1
