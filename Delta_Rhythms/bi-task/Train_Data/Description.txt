@@ -1,1 +1,32 @@
-Hello
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Training %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The experimental training paradigm is as follows: We launch an object that allows moving to the left, right, forward, and backward in an interface based on a randomized prediction, such that each subject concentrates to control the movement towards the direction indicated by the manager of the experiment, the signals acquired from each of subject are collected and recorded in a .npy file.
+Number of:
+- Subject:    10
+- Session:    1
+- Trial:      12
+- Duration:   15s
+- Frequency:  100Hz
+- Relaxation duration between trials:   4s
+- Country, alternating current (AC) hum has a frequency of 50Hz, can be used to eliminate the electrical noise.
+**************************************************************
+Loading the data of each subject using python:------------
+import numpy as np
+##  Get data using:   
+Data=np.load(file.npy,allow_pickle=True)
+##  Get raw EEG:      
+X_train=np.array([i for i in Data[:,0]])
+##   Get labels: 
+##   '0' for the imagination of a left-hand and left-leg (LHLL) movement;
+##   '1' for the imagination of a left-hand and left-leg (LHRL) movement;
+##   '2' for the imagination of a right-hand and left-leg (RHLL) movement;
+##   '3' for the imagination of a right-hand and right-leg (RHRL) movement.
+Y_train=np.array([i for i in Data[:,1]])
+----------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Testing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The experimental testing paradigm is as follows: we launch the global prediction system in real-time, as in this case a prediction will be done using model generated during training, and as result, each subject focuses on directing the object of the interface to the side indicated by the manager of the experience, with a number of trials are more than 12 per subject,  thus the prediction results are recorded by the system in a .txt file.
+- Subject:    5
+- Session:    1
+- Trial:      >=12
+- Duration:   15s
+- Frequency:  100Hz
+- Relaxation duration between trials:   4s
